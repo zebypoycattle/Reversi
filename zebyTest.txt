@@ -92,5 +92,5 @@ Your last move was: h8
 AI's last move was: B2
 
 Please enter a board coordinate (starting with a letter): 
-Reset: reset completed.
+
 
