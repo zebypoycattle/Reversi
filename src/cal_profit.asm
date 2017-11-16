@@ -271,6 +271,7 @@ calNoStepFinish:	add  $t0, $t1, $t2              # get total number of pieces
 			beq  $t0, 64, calGameOver       # check if board is full
 calTurnToOppo:		bnez $a3, calGameOver           # if a3 is not zero, means before another side has no nore step already.
 			jal  turnToOppo                 # else go to opponent side
+
 			beqz $a2, turnWhite             # if now is black, turn to white
 			la $a0, turntoblack             # else turntoblack
 			li $v0, 4                       # print
@@ -292,6 +293,7 @@ calGameOver:		la $a0, gameover                # gameover information
 			move $a0, $t2                   # number of white
 			li $v0, 1                       # print
 			syscall                         # print
+
 			li $v0, 4
 			beq $t1, $t2, tiedGame
 			blt $t2, $t1, blackWin
