@@ -1,0 +1,139 @@
+
+Welcome to Reversi. You will play as the black pieces against the computer.
+Reference the game manual to set up the game board using the bitmap display before running the program.
+Good luck!
+
+Please enter a board coordinate (starting with a letter): e3
+Your last move was: e3
+AI's last move was: D3
+
+Please enter a board coordinate (starting with a letter): c4
+Your last move was: c4
+AI's last move was: F3
+
+Please enter a board coordinate (starting with a letter): f2
+Your last move was: f2
+AI's last move was: B4
+
+Please enter a board coordinate (starting with a letter): c3
+Your last move was: c3
+AI's last move was: B3
+
+Please enter a board coordinate (starting with a letter): a4
+Your last move was: a4
+AI's last move was: B5
+
+Please enter a board coordinate (starting with a letter): b2
+Your last move was: b2
+AI's last move was: B1
+
+Please enter a board coordinate (starting with a letter): a1
+Your last move was: a1
+AI's last move was: C2
+
+Please enter a board coordinate (starting with a letter): c1
+Your last move was: c1
+AI's last move was: F6
+
+Please enter a board coordinate (starting with a letter): g7
+Your last move was: g7
+AI's last move was: A2
+
+Please enter a board coordinate (starting with a letter): a3
+Your last move was: a3
+AI's last move was: C5
+
+Please enter a board coordinate (starting with a letter): a5
+Your last move was: a5
+AI's last move was: H8
+
+Please enter a board coordinate (starting with a letter): f4
+Your last move was: f4
+AI's last move was: C6
+
+Please enter a board coordinate (starting with a letter): c7
+Your last move was: c7
+AI's last move was: A6
+
+Please enter a board coordinate (starting with a letter): d2
+Your last move was: d2
+AI's last move was: C8
+
+Please enter a board coordinate (starting with a letter): d7
+Your last move was: d7
+AI's last move was: E2
+
+Please enter a board coordinate (starting with a letter): f1
+Your last move was: f1
+AI's last move was: B7
+
+Please enter a board coordinate (starting with a letter): a8
+Your last move was: a8
+AI's last move was: G3
+
+Please enter a board coordinate (starting with a letter): h3
+Your last move was: h3
+AI's last move was: E1
+
+Please enter a board coordinate (starting with a letter): d1
+Your last move was: d1
+AI's last move was: A7
+
+Please enter a board coordinate (starting with a letter): f5
+Your last move was: f5
+AI's last move was: G2
+
+Please enter a board coordinate (starting with a letter): h1
+Your last move was: h1
+AI's last move was: G5
+
+Please enter a board coordinate (starting with a letter): h5
+Your last move was: h5
+AI's last move was: E6
+
+Please enter a board coordinate (starting with a letter): e7
+Your last move was: e7
+AI's last move was: F7
+
+Please enter a board coordinate (starting with a letter): f8
+Your last move was: f8
+AI's last move was: G4
+
+Please enter a board coordinate (starting with a letter): h5
+Your last move was: h5
+Illegal move. The chosen coordinate is occupied. Please retry.
+
+Please enter a board coordinate (starting with a letter): h4
+Your last move was: h4
+AI's last move was: G6
+
+Please enter a board coordinate (starting with a letter): e8
+Your last move was: e8
+AI's last move was: G1
+
+Please enter a board coordinate (starting with a letter): h6
+Your last move was: h6
+AI's last move was: H7
+
+Please enter a board coordinate (starting with a letter): g2
+Your last move was: g2
+Illegal move. The chosen coordinate is occupied. Please retry.
+
+Please enter a board coordinate (starting with a letter): h2
+Your last move was: h2
+AI's last move was: B6
+
+Please enter a board coordinate (starting with a letter): b2
+Your last move was: b2
+Illegal move. The chosen coordinate is occupied. Please retry.
+
+Please enter a board coordinate (starting with a letter): b8
+Your last move was: b8
+AI's last move was: D6
+
+Please enter a board coordinate (starting with a letter): d8
+Your last move was: d8Black has no more step, turn to White
+
+Please enter a board coordinate (starting with a letter): g8
+Your last move was: g8Game Over, Score is Black 53 : White 11
+User wins!

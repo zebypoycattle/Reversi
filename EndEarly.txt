@@ -1,0 +1,125 @@
+Please enter a board coordinate (starting with a letter): c5
+Your last move was: c5
+AI's last move was: C4
+
+Please enter a board coordinate (starting with a letter): d3
+Your last move was: d3
+AI's last move was: C6
+
+Please enter a board coordinate (starting with a letter): b5
+Your last move was: b5
+AI's last move was: B4
+
+Please enter a board coordinate (starting with a letter): a3
+Your last move was: a3
+AI's last move was: A4
+
+Please enter a board coordinate (starting with a letter): a5
+Your last move was: a5
+AI's last move was: B6
+
+Please enter a board coordinate (starting with a letter): d6
+Your last move was: d6
+AI's last move was: E6
+
+Please enter a board coordinate (starting with a letter): f4
+Your last move was: f4
+AI's last move was: C3
+
+Please enter a board coordinate (starting with a letter): a6
+Your last move was: a6
+AI's last move was: B3
+
+Please enter a board coordinate (starting with a letter): b7
+Your last move was: b7
+AI's last move was: E3
+
+Please enter a board coordinate (starting with a letter): a2
+Your last move was: a2
+AI's last move was: A8
+
+Please enter a board coordinate (starting with a letter): b8
+Your last move was: b8
+AI's last move was: A7
+
+Please enter a board coordinate (starting with a letter): f6
+Your last move was: f6
+AI's last move was: A1
+
+Please enter a board coordinate (starting with a letter): b2
+Your last move was: b2
+AI's last move was: G6
+
+Please enter a board coordinate (starting with a letter): f3
+Your last move was: f3
+AI's last move was: G3
+
+Please enter a board coordinate (starting with a letter): g4
+Your last move was: g4
+AI's last move was: H4
+
+Please enter a board coordinate (starting with a letter): c2
+Your last move was: c2
+AI's last move was: D2
+
+Please enter a board coordinate (starting with a letter): b1
+Your last move was: b1
+AI's last move was: C7
+
+Please enter a board coordinate (starting with a letter): e1
+Your last move was: e1
+AI's last move was: C1
+
+Please enter a board coordinate (starting with a letter): d1
+Your last move was: d1
+AI's last move was: E2
+
+Please enter a board coordinate (starting with a letter): c8
+Your last move was: c8
+AI's last move was: D7
+
+Please enter a board coordinate (starting with a letter): f1
+Your last move was: f1
+AI's last move was: G1
+
+Please enter a board coordinate (starting with a letter): d8
+Your last move was: d8
+AI's last move was: E7
+
+Please enter a board coordinate (starting with a letter): e8
+Your last move was: e8
+AI's last move was: F5
+
+Please enter a board coordinate (starting with a letter): h3
+Your last move was: h3
+AI's last move was: F2
+
+Please enter a board coordinate (starting with a letter): h7
+Your last move was: h7
+AI's last move was: F8
+
+Please enter a board coordinate (starting with a letter): h2
+Your last move was: h2
+Illegal move. The chosen coordinate will not flip any piece. You must move to flip at least one piece when flippable piece(s) exists.
+
+Please enter a board coordinate (starting with a letter): g2
+Your last move was: g2
+AI's last move was: G5
+
+Please enter a board coordinate (starting with a letter): h5
+Your last move was: h5
+AI's last move was: F7
+
+Please enter a board coordinate (starting with a letter): g7
+Your last move was: g7
+AI's last move was: H8
+
+Please enter a board coordinate (starting with a letter): g8
+Your last move was: g8
+AI's last move was: H6
+
+Black has no more step, turn to White
+
+AI's last move was: H2
+
+Game Over, Score is Black 6 : White 57
