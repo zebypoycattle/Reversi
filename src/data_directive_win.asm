@@ -2,9 +2,24 @@
 #		.data
 
 #user_input
-promtCoor:	.asciiz "\nPlease enter a board loaction (starting with a letter): "
+newLine:	.asciiz "\n"
+promtCoor:	.asciiz "\nPlease enter a board coordinate (starting with a letter): "
 invalidInput:	.asciiz "\nInvalid coordinates. please try again.\n"
 coordinates:	.asciiz "YX"
+AIMoveMsg:
+		.asciiz "\nAI's last move was: "
+userMoveMsg:	
+		.asciiz "\nYour last move was: "
+illegalMoveOccupiedMsg:
+		.asciiz "\nIllegal move. The chosen coordinate is occupied. Please retry.\n"		
+illegalMoveNoProfitMsg:
+		.asciiz "\nIllegal move. The chosen coordinate will not flip any piece. You must move to flip at least one piece when flippable piece(s) exists.\n"
+WelcomeMsg:	.asciiz "Welcome to Reversi by Team Ex-Caliber.\nYou will play as the black pieces against the AI.\nReference the game manual to set up the game board and row/column labels\nusing the bitmap display in order to play, as well as for gameplay instructions.\nGood luck!\n" 
+compWin:	.asciiz "\nAI wins!"
+userWin:	.asciiz "\nUser wins!"
+tie:		.asciiz "\nTied game!"
+endEarly:	.asciiz "\nThere are no moves for either player. The game ends early."
+
 		.align   2
 red:		.word	0x00FF0000
 yellow:		.word	0x00C75B12
@@ -29,26 +44,26 @@ maxPiecesNum:	.word	64			#num of max pieces
 maxProfit:	.word   0			#store the max profit from calculation
 maxProfitRow:	.word	0
 maxProfitCol:	.word	0
-turntoblack:	.asciiz	"White has no more step, turn to Black\n"
-turntowhite:	.asciiz	"Black has no more step, turn to White\n"
-gameover:	.asciiz	"Game Over, Score is Black "
+turntoblack:	.asciiz	"White (AI) has no more moves, switch to User.\n"
+turntowhite:	.asciiz	"Black (User) has no more moves, switch to AI.\n"
+gameover:	.asciiz	"\nGame Over, Score is Black "
 score:		.asciiz " : White "
-labelA:		.asciiz "C:\\Users\\jxl173630\\Downloads\\Reversi\\src\\Labels\\A.bmp"
-labelB:		.asciiz "C:\\Users\\jxl173630\\Downloads\\Reversi\\src\\Labels\\B.bmp"
-labelC:		.asciiz "C:\\Users\\jxl173630\\Downloads\\Reversi\\src\\Labels\\C.bmp"
-labelD:		.asciiz "C:\\Users\\jxl173630\\Downloads\\Reversi\\src\\Labels\\D.bmp"
-labelE:		.asciiz "C:\\Users\\jxl173630\\Downloads\\Reversi\\src\\Labels\\E.bmp"
-labelF:		.asciiz "C:\\Users\\jxl173630\\Downloads\\Reversi\\src\\Labels\\F.bmp"
-labelG:		.asciiz "C:\\Users\\jxl173630\\Downloads\\Reversi\\src\\Labels\\G.bmp"
-labelH:		.asciiz "C:\\Users\\jxl173630\\Downloads\\Reversi\\src\\Labels\\H.bmp"
-label1:		.asciiz "C:\\Users\\jxl173630\\Downloads\\Reversi\\src\\Labels\\1.bmp"
-label2:		.asciiz "C:\\Users\\jxl173630\\Downloads\\Reversi\\src\\Labels\\2.bmp"
-label3:		.asciiz "C:\\Users\\jxl173630\\Downloads\\Reversi\\src\\Labels\\3.bmp"
-label4:		.asciiz "C:\\Users\\jxl173630\\Downloads\\Reversi\\src\\Labels\\4.bmp"
-label5:		.asciiz "C:\\Users\\jxl173630\\Downloads\\Reversi\\src\\Labels\\5.bmp"
-label6:		.asciiz "C:\\Users\\jxl173630\\Downloads\\Reversi\\src\\Labels\\6.bmp"
-label7:		.asciiz "C:\\Users\\jxl173630\\Downloads\\Reversi\\src\\Labels\\7.bmp"
-label8:		.asciiz "C:\\Users\\jxl173630\\Downloads\\Reversi\\src\\Labels\\8.bmp"
+labelA:		.asciiz "C:\\Users\\Owner\\Desktop\\CS\\MIPS\\Reversi\\Reversi-dev\\src\\Labels\\A.bmp"
+labelB:		.asciiz "C:\\Users\\Owner\\Desktop\\CS\\MIPS\\Reversi\\Reversi-dev\\src\\Labels\\B.bmp"
+labelC:		.asciiz "C:\\Users\\Owner\\Desktop\\CS\\MIPS\\Reversi\\Reversi-dev\\src\\Labels\\C.bmp"
+labelD:		.asciiz "C:\\Users\\Owner\\Desktop\\CS\\MIPS\\Reversi\\Reversi-dev\\src\\Labels\\D.bmp"
+labelE:		.asciiz "C:\\Users\\Owner\\Desktop\\CS\\MIPS\\Reversi\\Reversi-dev\\src\\Labels\\E.bmp"
+labelF:		.asciiz "C:\\Users\\Owner\\Desktop\\CS\\MIPS\\Reversi\\Reversi-dev\\src\\Labels\\F.bmp"
+labelG:		.asciiz "C:\\Users\\Owner\\Desktop\\CS\\MIPS\\Reversi\\Reversi-dev\\src\\Labels\\G.bmp"
+labelH:		.asciiz "C:\\Users\\Owner\\Desktop\\CS\\MIPS\\Reversi\\Reversi-dev\\src\\Labels\\H.bmp"
+label1:		.asciiz "C:\\Users\\Owner\\Desktop\\CS\\MIPS\\Reversi\\Reversi-dev\\src\\Labels\\1.bmp"
+label2:		.asciiz "C:\\Users\\Owner\\Desktop\\CS\\MIPS\\Reversi\\Reversi-dev\\src\\Labels\\2.bmp"
+label3:		.asciiz "C:\\Users\\Owner\\Desktop\\CS\\MIPS\\Reversi\\Reversi-dev\\src\\Labels\\3.bmp"
+label4:		.asciiz "C:\\Users\\Owner\\Desktop\\CS\\MIPS\\Reversi\\Reversi-dev\\src\\Labels\\4.bmp"
+label5:		.asciiz "C:\\Users\\Owner\\Desktop\\CS\\MIPS\\Reversi\\Reversi-dev\\src\\Labels\\5.bmp"
+label6:		.asciiz "C:\\Users\\Owner\\Desktop\\CS\\MIPS\\Reversi\\Reversi-dev\\src\\Labels\\6.bmp"
+label7:		.asciiz "C:\\Users\\Owner\\Desktop\\CS\\MIPS\\Reversi\\Reversi-dev\\src\\Labels\\7.bmp"
+label8:		.asciiz "C:\\Users\\Owner\\Desktop\\CS\\MIPS\\Reversi\\Reversi-dev\\src\\Labels\\8.bmp"
 # labelA:		.asciiz "/Users/judy/GraduateStudy/UTD/Fall2017/CS3340.501-ComputerArchitecture/Project/Reversi/src/Labels/A.bmp"
 # labelB:		.asciiz "/Users/judy/GraduateStudy/UTD/Fall2017/CS3340.501-ComputerArchitecture/Project/Reversi/src/Labels/B.bmp"
 # labelC:		.asciiz "/Users/judy/GraduateStudy/UTD/Fall2017/CS3340.501-ComputerArchitecture/Project/Reversi/src/Labels/C.bmp"
